@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namesapce std;
+using namespace std;
 
 int main(){
 int t;
@@ -17,7 +17,7 @@ a[arr[i]]++;
 }
 bool d=false;
 unordered_map<int, int>:: iterator itr;
-for(itr=a.begin(); a!=a.end(); itr++){
+for(itr=a.begin(); itr!=a.end(); itr++){
   if(a->second>1) cout<<a->first;
   else cout<<-1;
 }
