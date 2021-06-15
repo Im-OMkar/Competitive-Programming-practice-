@@ -51,8 +51,6 @@ void hatao(node* &head, int val){
 		return;
 	}
 
-
-
 node* temp=head;
 while(temp->next->data!=val){
 	temp=temp->next;
@@ -77,8 +75,16 @@ node* rev(node* &head){
 }
 
 node* rikrev(node* &head){
+	if(head==NULL || head->next==NULL) return head;
+
+	node* newnode= rikrev(hrad->next);
+	head->next->next= hrad->next;
+	head->next=NULL;
 	
-}
+	
+} 
+
+
 
 bool searchs(node* &head, int key){
 	node* temp=head;
